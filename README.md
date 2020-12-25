@@ -9,12 +9,23 @@
 - [ ] add front end testing (maybe cypress?)
 
 ## Project setup
-This project was built with go 1.14.3 and @vue/cli 4.5.9 
+This project was built with go 1.14.3 , @vue/cli 4.5.9 , mysql and golang-migrate
+
+On a mac, you can use homebrew to install most of the requirements, if not get these required packages:
+- [golang](https://golang.org/dl/) 
+- [mysql](https://dev.mysql.com/downloads/mysql/)
+- [node & npm](https://nodejs.org/en/download/)
+- [golang-migrate](https://github.com/golang-migrate/migrate/tree/master/cmd/migrate)
+
+create a database to use for the project
 
 ```
-npm install
-go get
-go run main.go
+$ git clone https://github.com/sliceking/gvm.git
+$ npm install
+$ npm run build
+$ go get
+$ migrate -database 'mysql://user:password@tcp(localhost)/database'  -path db/migrations up
+$ go run main.go
 ```
 
 ### Compiles and hot-reloads for js development
