@@ -6,6 +6,7 @@
 - [ ] get the database and go-migrate setup
 - [ ] figure out authentication
 - [ ] add CRUD for the resources
+- [ ] add front end testing (maybe cypress?)
 
 ## Project setup
 This project was built with go 1.14.3 and @vue/cli 4.5.9 
